@@ -1,0 +1,43 @@
+﻿@model IEnumerable<aspMVCstore.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @{
+                    if (item.Status == OrderStatus.Processing){
+                        <a asp-action="Cancel" asp-route-id="@item.OrderID">Cancel |</a>;
+                         
+                    }
+                }
+                
+                <a asp-action="Details" asp-route-id="@item.OrderID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

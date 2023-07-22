@@ -1,0 +1,132 @@
+﻿@model PaginatedList<aspMVCstore.Models.Product>
+@using Microsoft.AspNetCore.Authorization
+@using aspMVCstore.Models
+@inject IAuthorizationService AuthorizationService
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles {
+	<link href="/css/product.css" rel="stylesheet" type="text/css" />
+}
+
+<h1>Index</h1>
+<form asp-action="Index" method="get" asp-route-currentFilter="@ViewData["CurrentFilter"]">
+ <div class="form-actions no-color">
+ <p>
+ Find by name: 
+ <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+ <input type="submit" value="Search" class="btn btn-info" /> |
+ <a asp-action="Index">Back to Full List</a>
+ </p>
+ </div>
+</form>
+
+
+@if(User.IsInRole("Admin")){
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.inventory)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.inventory)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProductID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+<script src="https://kit.fontawesome.com/76d71d0d77.js" crossorigin="anonymous"></script>
+<section class="section-products">
+	<div class="container">
+		<div class="row justify-content-center text-center">
+			<div class="col-md-8 col-lg-6">
+				<div class="header">
+					<h3>Featured Product</h3>
+					<h2>Popular Products</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@foreach(var item in Model){
+			<!-- Single Product -->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-1" class="single-product">
+					<div class="part-1" style="background:url('@item.ImageUrl')">
+						<ul>
+							<li><a asp-controller="Carts" asp-action="Details"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a asp-controller="Carts" asp-action="AddItem" asp-route-ProductID="@item.ProductID"><i class="fas fa-plus"></i></a></li>
+							<li><a asp-action="Details" asp-route-id="@item.ProductID"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+					<div class="part-2">
+                            <h3 class="product-title">@Html.DisplayFor(modelItem => item.Name)</h3>
+                            <h4 class="product-price">$@Html.DisplayFor(modelItem => item.Price)</h4>
+					</div>
+				</div>
+			</div>
+			}</div>
+		</div>
+	</div>
+</section>
+@{
+     var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+     var nextDisabled = !Model.HasNextPage ? "disabled" : ""; 
+}
+ <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-pageNumber="@(Model.PageIndex - 1)"
+ asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default @prevDisabled">
+ Previous
+</a> 
+<a asp-action="Index"
+ asp-route-sortOrder="@ViewData["CurrentSort"]"
+ asp-route-pageNumber="@(Model.PageIndex + 1)"
+ asp-route-currentFilter="@ViewData["CurrentFilter"]"
+ class="btn btn-default @nextDisabled">
+ Next
+</a>
