@@ -1,0 +1,17 @@
+﻿using Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Services.Abstractions
+{
+    public interface ICategoryService : IGenericService<Category>
+    {
+        Task<Category> CreateAsync(Category category);
+        Task<Category> GetByIdAsync(int Category);
+        Task<Category> UpdateAsync(Category category);
+        void DeleteAsync(int CategoryID);
+    }
+}

@@ -1,4 +1,4 @@
-﻿@model aspMVCstore.Models.Order
+﻿@model Domain.Entities.Order
 
 @{
     ViewData["Title"] = "Edit";
@@ -19,7 +19,7 @@
 
 
             <select asp-for="Status"
-                    asp-items="Html.GetEnumSelectList<aspMVCstore.Models.OrderStatus>()">
+                    asp-items="Html.GetEnumSelectList<Domain.Entities.OrderStatus>()">
             </select>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

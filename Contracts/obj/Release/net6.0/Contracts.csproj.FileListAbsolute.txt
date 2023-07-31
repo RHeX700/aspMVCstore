@@ -1,0 +1,12 @@
+C:\Users\hp\Documents\aspMVCstore\Contracts\bin\Release\net6.0\Contracts.deps.json
+C:\Users\hp\Documents\aspMVCstore\Contracts\bin\Release\net6.0\Contracts.dll
+C:\Users\hp\Documents\aspMVCstore\Contracts\bin\Release\net6.0\Contracts.pdb
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.AssemblyInfo.cs
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.dll
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\refint\Contracts.dll
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\Contracts.pdb
+C:\Users\hp\Documents\aspMVCstore\Contracts\obj\Release\net6.0\ref\Contracts.dll

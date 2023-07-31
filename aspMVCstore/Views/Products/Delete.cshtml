@@ -1,4 +1,4 @@
-﻿@model aspMVCstore.Models.Product
+﻿@model Domain.Entities.Product
 
 @{
     ViewData["Title"] = "Delete";
@@ -36,10 +36,10 @@
             @Html.DisplayFor(model => model.Price)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.inventory)
+            @Html.DisplayNameFor(model => model.Inventory)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.inventory)
+            @Html.DisplayFor(model => model.Inventory)
         </dd>
     </dl>
     

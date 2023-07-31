@@ -1,0 +1,17 @@
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.deps.json
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.dll
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.pdb
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Contracts.dll
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Domain.dll
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Contracts.pdb
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\bin\Debug\net6.0\Domain.pdb
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfo.cs
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.CopyComplete
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.dll
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\refint\Services.Abstractions.dll
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.pdb
+C:\Users\hp\Documents\aspMVCstore\Services.Abstractions\obj\Debug\net6.0\ref\Services.Abstractions.dll

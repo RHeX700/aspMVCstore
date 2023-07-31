@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Contracts.Carts
+{
+    public class CartCreationDTO : ICreationDto
+    {
+        public Guid CartID { get; set; }
+    }
+}
